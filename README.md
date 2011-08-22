@@ -29,7 +29,6 @@ will run. You should then be able to do:
 
 rackup
 
-
 [0]: [http://kasabi.com]
 [1]: [http://www.greenhughes.com/content/html5-leanback-tv-webapp-brings-sparql-living-room] 
 [2]: [http://beta.kasabi.com/dataset/prelinger-archives]
