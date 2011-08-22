@@ -25,9 +25,9 @@ INSTALLATION
 The application is a very simple Sinatra application. It's dependent on the [Kasabi.rb][3] ruby gem. 
 
 You need to configure your Kasabi API key in the KASABI_API_KEY environment variable before it 
-will run. You should then be able to do:
+will run. You should then be able to just:
 
-rackup
+ rackup
 
 [0]: [http://kasabi.com]
 [1]: [http://www.greenhughes.com/content/html5-leanback-tv-webapp-brings-sparql-living-room] 
