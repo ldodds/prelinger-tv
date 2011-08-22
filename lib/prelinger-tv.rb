@@ -27,10 +27,10 @@ class PrelingerTV < Sinatra::Base
     ?film dcterms:title ?title;
           foaf:depiction ?depiction;
           dcterms:description ?description;
-          p:sponsor ?org;
+    #      p:sponsor ?org;
           dcterms:published ?published.
     
-    ?org foaf:name ?sponsor.          
+    #?org foaf:name ?sponsor.          
   }
   
 EOL
@@ -74,7 +74,7 @@ EOL
       @videos << {
         :src => result["src"]["value"],
         :title => result["title"]["value"],
-        :sub => "#{result["sponsor"]["value"]} (#{result["published"]["value"]})",
+        :sub => result["published"]["value"],
         :desc => result["description"]["value"],
         :thumb => result["depiction"]["value"],
         :category => category_from_date( result["published"]["value"] )
