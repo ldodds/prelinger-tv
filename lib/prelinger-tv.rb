@@ -32,6 +32,7 @@ class PrelingerTV < Sinatra::Base
     
     #?org foaf:name ?sponsor.          
   }
+  ORDER BY ?title
   
 EOL
   
