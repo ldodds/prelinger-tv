@@ -8,7 +8,7 @@ a Google TV template to load data using SPARQL queries. See:
 
 [An HTML5 Leanback TV webapp that brings SPARQL to your living room][1]
 
-The code has been adapted to use the Prelinger Archives data stored in Kasabi[2]. 
+The code has been adapted to use the [Prelinger Archives][2] data stored in Kasabi. 
 
 The code performs a SPARQL query to extract some basic metadata about each of the films that 
 are described in the dataset. The actual media files are stored on the Internet Archive 
@@ -22,7 +22,7 @@ Leigh Dodds (ld@kasabi.com)
 INSTALLATION
 ------------
 
-The application is a very simple Sinatra application. It's dependent on the Kasabi.rb ruby gem[3]. 
+The application is a very simple Sinatra application. It's dependent on the [Kasabi.rb][3] ruby gem. 
 
 You need to configure your Kasabi API key in the KASABI_API_KEY environment variable before it 
 will run. You should then be able to do:
