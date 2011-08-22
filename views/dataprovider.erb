@@ -1,0 +1,58 @@
+var gtv = gtv || {
+  jq: {}
+};
+
+/**
+ * DataProvider class. Defines a provider for all data (Categories, Images & Videos) shown in the template.
+ */
+gtv.jq.DataProvider = function() {
+};
+
+/**
+ * Returns all data shown in the template..
+ * @return {object} with the following structure:
+ *    - categories -> [category1, category2, ..., categoryN].
+ *    - category -> {name, videos}.
+ *    - videos -> {thumb, title, subtitle, description, sources}
+ *    - sources -> [source1, source2, ..., sourceN]
+ *    - source -> string with the url | {src, type, codecs}
+ */
+gtv.jq.DataProvider.prototype.getData = function() {
+  function getRandom(max) {
+    return Math.floor(Math.random() * max);
+  }
+
+  var categories = [ <%= @categories %> ];
+
+  var sources = <%= @videos %>;
+
+  var data = {
+    categories: [ ]
+  };
+
+  for (var i=0; i<categories.length; i++) {
+    var category = {
+      name: categories[i],
+      videos: []
+    };
+    data.categories.push(category);
+	   
+    for (var j=0; j<sources.length; j++) {    
+      var videoInfo = sources[j];
+      if (videoInfo.category == categories[i]) {
+	      var video = {
+	        thumb: videoInfo.thumb,
+	        title: videoInfo.title,
+	        subtitle: videoInfo.sub,
+	        description: [ videoInfo.desc ],
+	        sources: [videoInfo.src]
+	      }
+		category.videos.push(video);	      
+	  }
+    };
+	    
+  }
+
+  return data;
+};
+

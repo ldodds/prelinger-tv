@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Google TV HTML5 Template 2</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="gtv-autozoom" content="off" />
+<link rel="stylesheet" href="/css/controls.css" />
+<link rel="stylesheet" href="/css/styles.css" type="text/css"/>
+</head>
+
+<body style="visibility:hidden;">
+
+	<div id="tooltip-container"></div>
+	<div id="video-container"></div>
+   	  <div id="header">
+          <div id="logo">
+            <img src="/images/acme-logo-small.png" alt="Logo" />
+          </div>
+          <div id="tabs" class="my-tabs-parent"></div>
+          <div class="clear"></div>
+          <div id="carousel">
+          	<div id="arrowL" class="arrowL" onclick="templatePage.previousVideo();"><img src="/images/arrowL.png"/></div>
+            <div id="thumbnails" class="thumbnails"></div>
+            <div id="arrowR" class="arrowR" onclick="templatePage.nextVideo();"><img src="/images/arrowR.png"/></div>
+          </div>
+        </div>
+      <div id="content">
+      	<div class="description">
+      		<h1 id="videoTitle">Lorem Ipsum</h1>
+			<p id="videoSubtitle">Lorem ipsum dolor sit amet</p>
+        </div>
+        <div id="controls" class="video-commands-parent">
+        	<div id="progress-container"></div>
+        	<div class="clear"></div>
+        	<div class="video-command-div"><div class="video-command" id="previous"></div></div>
+            <div class="video-command-div"><div class="video-command" id="rewind"></div></div>
+            <div class="video-command-div"><div class="video-command" id="playPause"></div></div>
+            <div class="video-command-div"><div class="video-command" id="fastForward"></div></div>
+            <div class="video-command-div"><div class="video-command" id="next"></div></div>
+        </div>
+      </div>
+      <div class="clear"></div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" language="javascript"
+    src="/js/gtvcore.js"></script>
+<script type="text/javascript" language="javascript"
+    src="/js/keycontrol.js"></script>
+<script type="text/javascript" language="javascript"
+    src="/js/sidenav.js"></script>
+<script type="text/javascript" language="javascript"
+    src="/js/carousel.js"></script>
+<script type="text/javascript" language="javascript"
+    src="/js/videocontrol.js"></script>
+<script type="text/javascript" language="javascript"
+    src="/js/tooltip.js"></script>
+<script type="text/javascript" language="javascript"
+    src="/js/videoprogressbar.js"></script>
+<script type="text/javascript" language="javascript"
+    src="<%= @dataprovider %>"></script>
+<script type="text/javascript" language="javascript"
+    src="/js/index.js"></script>
+</body>
+</html>
