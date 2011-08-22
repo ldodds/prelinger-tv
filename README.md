@@ -43,4 +43,4 @@ will run. You should then be able to just:
 [2]: [http://beta.kasabi.com/dataset/prelinger-archives]
 [3]: [http://github.com/kasabi/kasabi.rb]
 [4]: [http://www.google.com/tv/]
-[5]: [http://github.com/ldodds/prelinger-archives]
+[5]: [http://github.com/ldodds/prelinger]
