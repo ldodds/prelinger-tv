@@ -1,7 +1,7 @@
 PRELINGER TV
 ---------
 
-This is an experiment at creating a [Google TV][4] channel based on data stored in Kasabi[0].
+This is an experiment at creating a [Google TV][4] channel based on data stored in [Kasabi][0].
 
 The code is based on an experiment originally carried out by Liam Green-Hughes who adapted one 
 of the off-the-shelf Google TV templates to load data using a SPARQL query. For more background on 
