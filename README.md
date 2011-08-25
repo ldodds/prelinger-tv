@@ -38,8 +38,17 @@ will run. You should then be able to just:
 
 	rackup
 	
-You should also subscribe to the Prelinger Archives SPARQL endpoint on Kasabi[2], to ensure your 
+You should also subscribe to the [Prelinger Archives SPARQL endpoint on Kasabi][6], to ensure your 
 API key is authorised to use the API.
+
+BROWSER COMPATIBILITY
+---------------------
+
+This is currently known to run on:
+
+* Google Chrome
+* Chromium (need to install chromium-codecs-ffmpeg-extra package for video playback)
+
 
 [0]: [http://kasabi.com]
 [1]: [http://www.greenhughes.com/content/html5-leanback-tv-webapp-brings-sparql-living-room] 
@@ -47,3 +56,4 @@ API key is authorised to use the API.
 [3]: [http://github.com/kasabi/kasabi.rb]
 [4]: [http://www.google.com/tv/]
 [5]: [http://github.com/ldodds/prelinger]
+[6]: [http://beta.kasabi.com/dataset/prelinger-archives/apis/sparql]
