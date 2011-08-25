@@ -37,6 +37,9 @@ You need to configure your Kasabi API key in the KASABI_API_KEY environment vari
 will run. You should then be able to just:
 
 	rackup
+	
+You should also subscribe to the Prelinger Archives SPARQL endpoint on Kasabi[2], to ensure your 
+API key is authorised to use the API.
 
 [0]: [http://kasabi.com]
 [1]: [http://www.greenhughes.com/content/html5-leanback-tv-webapp-brings-sparql-living-room] 
